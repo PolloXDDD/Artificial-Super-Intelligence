@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "noema-rsi"
+version = "0.2.0"
+description = "NOEMA research agent with measured recursive training and model selection"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24,<3", "torch>=2.6,<3"]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[project.scripts]
+noema-rsi = "noema.self_improvement.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["noema*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["error::pytest.PytestReturnNotNoneWarning"]

@@ -1,0 +1,7 @@
+Command: python run_rsi.py --generations 4 --candidates 3 --train-steps 150 --eval-episodes 20 --output examples/trained_run
+
+Generation 1: validation MSE 0.434742 -> 0.208756; promoted 2
+Generation 2: validation MSE 0.208756 -> 0.208756; incumbent retained
+Generation 3: validation MSE 0.208756 -> 0.189302; promoted 0
+Generation 4: validation MSE 0.189302 -> 0.184579; promoted 1
+Final test MSE: 0.416276 -> 0.178223 (57.19% reduction). Saved in examples/trained_run

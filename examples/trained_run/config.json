@@ -1,0 +1,18 @@
+{
+  "seed": 42,
+  "generations": 4,
+  "candidates": 3,
+  "train_steps": 150,
+  "batch_size": 64,
+  "initial_episodes": 12,
+  "fresh_episodes": 6,
+  "eval_episodes": 20,
+  "horizon": 24,
+  "replay_capacity": 12000,
+  "auxiliary_every": 8,
+  "min_improvement": 0.005,
+  "max_task_regression": 0.02,
+  "patience": 3,
+  "threads": 1,
+  "device": "cpu"
+}
